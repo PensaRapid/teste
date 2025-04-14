@@ -1,0 +1,7 @@
+<h1>Criar Tarefa</h1>
+<form method="POST">
+ {% csrf_token %}
+ {{ form }}
+ <button type="submit">Salvar</button>
+</form>
+<a href="{% url 'todo_list' %}">Cancelar</a>
